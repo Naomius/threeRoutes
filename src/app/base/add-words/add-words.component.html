@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="container_form">
+        <mat-form-field>
+            <input #addWord matInput  class="container_input" type="text" placeholder="Введите слово">
+        </mat-form-field>
+        <button class="container_button" mat-raised-button color="primary"
+                (click)="addWordFromInput$.next(addWord.value)">Обработать
+        </button>
+    </div>
+
+</div>

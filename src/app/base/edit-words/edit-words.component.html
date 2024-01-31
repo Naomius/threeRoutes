@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="actions">
+        <ul>
+            <li>
+                <input #wordIndex type="number" placeholder="Введите инлекс слова">
+                <button class="remove-btn" mat-raised-button color="primary"
+                        (click)="deleteWordByIndexButton$.next(wordIndex.value)">
+                        Удалить слово по индексу
+                </button>
+            </li>
+            <li>
+                <input #wordFromInput type="text" placeholder="Введите слово для удаления">
+                <button class="remove-btn" mat-raised-button color="primary"
+                    (click)="deleteWordByWordButton$.next(wordFromInput.value)">
+                    Удалить слово по самому слову
+                </button>
+            </li>
+            <li>
+                <button class="remove-btn" mat-raised-button color="primary"
+                    (click)="deleteFirstWordButton$.next()">
+                    Удалить первое слово
+                </button>
+            </li>
+            <li>
+                <button class="remove-btn" mat-raised-button color="primary"
+                    (click)="deleteLastWordButton$.next()">
+                    Удалить последнее слово
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>

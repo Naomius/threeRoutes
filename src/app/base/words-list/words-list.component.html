@@ -1,0 +1,20 @@
+<div class="container">
+        <div class="container_words" *ngIf="(currentWords | async)?.length; else emptyList">
+            <ul>
+                <li *ngFor="let word of currentWords | async; let i = index">
+                    <div>
+                        <p>
+                            {{i + 1}} - {{word.word}}
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <ng-template #emptyList>
+            <div>Слова не найдены</div>
+            <button mat-raised-button color="primary"
+                    routerLink="/add-words">Вернуться на страницу 'Добавить слово'
+            </button>
+        </ng-template>
+</div>

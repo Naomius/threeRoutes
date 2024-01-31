@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+    .container_words {
+        text-align: start;
+
+        ul {
+            list-style-type: none;
+        }
+    }
+
+    button {
+        margin-top: 15px;
+    }
+}

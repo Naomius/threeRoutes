@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+
+    .actions {
+        max-width: 480px;
+
+        ul {
+            list-style: none;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+
+                input {
+                    margin-bottom: 5px;
+                    padding: 5px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
